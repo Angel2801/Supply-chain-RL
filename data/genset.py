@@ -15,5 +15,4 @@ def generateDataSet():
         productionCost = np.random.randint(200,601,dtype=np.int32)
         transportCost = np.random.randint(10000,20001,dtype=np.int32)
         dataset.append([factory, warehouse, product, avail, dispatched, demand, productionCost, transportCost])  
-    print(type(dataset))
     return dataset
