@@ -13,6 +13,7 @@ def generateDataSet():
         dispatched = np.random.randint(600,1001,dtype=np.int32)
         demand = np.random.randint(1,avail+dispatched,dtype=np.int32)
         productionCost = np.random.randint(200,601,dtype=np.int32)
+        salePrice = np.random.randint(productionCost,productionCost+500,dtype=np.int32)
         transportCost = np.random.randint(10000,20001,dtype=np.int32)
-        dataset.append([factory, warehouse, product, avail, dispatched, demand, productionCost, transportCost])  
+        dataset.append([factory, warehouse, product, avail, dispatched, demand, productionCost, salePrice, transportCost])  
     return dataset
